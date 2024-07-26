@@ -94,6 +94,7 @@ resource "aws_launch_template" "app" {
               echo "<h1>Instance ID: $INSTANCE_ID</h1><h2>Hostname: $HOSTNAME</h2>" > /var/www/html/index.html
               # nginx 재시작
               systemctl restart nginx
+              # stress-ng —cpu 1 —timeout 300 &
               EOF
   )
 }
