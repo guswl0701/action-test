@@ -6,7 +6,7 @@ on:
       - main
     paths:
       - 'Dockerfile'
-      - '.github/workflows/workflows.yaml'
+      - '.github/workflows/deploy.yaml'
       - 'main.tf'
       - '**/*.tf'
 
